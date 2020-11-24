@@ -1,11 +1,5 @@
 #Module      : LABEL
 #Description : Terraform label module variables.
-variable "vpc_enabled" {
-  type        = bool
-  default     = true
-  description = "Flag to control the vpc creation."
-}
-
 variable "name" {
   type        = string
   default     = ""
