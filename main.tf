@@ -9,7 +9,7 @@
 module "labels" {
   source = "git::https://gitlab.com/devops4me-automation/terraform-label.git"
 
-  name        = "labels"
+  name        = "s3bucket"
   application = "devops4me"
   environment = "test"
   label_order = ["name", "application", "environment"]

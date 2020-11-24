@@ -4,14 +4,14 @@ provider "aws" {
 
 module "s3_bucket" {
   source                  = "devops4mecode/s3/aws"
-  version                 = "1.2.0"
-  name                    = "logging-bucket"
+  version                 = "1.3.0"
+  name                    = "s3bucket"
   application             = "devops4me"
   environment             = "test"
   label_order             = ["environment", "application", "name"]
   versioning              = true
   acl                     = "private"
   bucket_logging_enabled  = true
-  target_bucket           = "bucket-logs12"
+  target_bucket           = "do4m-bucket-logs"
   target_prefix           = "logs"
 }
