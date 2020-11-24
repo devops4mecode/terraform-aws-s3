@@ -4,7 +4,7 @@ provider "aws" {
 
 module "s3_bucket" {
   source                  = "devops4mecode/s3/aws"
-  version                 = "1.3.0"
+  version                 = "1.4.0"
   name                    = "s3bucket"
   application             = "devops4me"
   environment             = "test"
